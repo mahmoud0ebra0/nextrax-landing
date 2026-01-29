@@ -1,0 +1,72 @@
+:root {
+  --color-primary: #0A1F44;
+  --color-accent: #00E5FF;
+  --color-success: #4DFFB3;
+  --color-warning: #FF9F43;
+  --color-bg: #050B16;
+}
+
+/* ---------- styles/globals.css (Enhanced Version) ---------- */
+
+/* Base Styles */
+body {
+  font-family: 'Inter', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+  background: linear-gradient(270deg, #050B16, #0A1F44, #00E5FF, #4DFFB3);
+  background-size: 1000% 1000%;
+  animation: gradientBG 20s ease infinite;
+}
+
+/* Animated Gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Text and Shadow */
+h1, h2, h3, p, a { color: white; }
+.text-shadow-lg { text-shadow: 0 0 20px #00E5FF, 0 0 30px #4DFFB3; }
+
+/* Buttons */
+button, a.button {
+  font-family: 'Inter', Roboto, sans-serif;
+  background-color: #00E5FF; /* Neon Cyan */
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #00E5FF;
+}
+
+button:hover, a.button:hover {
+  box-shadow: 0 0 25px #00E5FF, 0 0 50px #4DFFB3;
+  transform: scale(1.08);
+  background-color: #4DFFB3;
+}
+
+button:active, a.button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 15px #00E5FF;
+}
+
+/* Layout Utility Classes */
+.text-center { text-align: center; }
+.flex { display: flex; }
+.justify-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.p-5 { padding: 1.25rem; }
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+
+/* Sections */
+section { padding: 5rem 1.25rem; }
+
+/* Footer */
+footer { background-color: #0A1F44; text-align: center; padding: 2.5rem 1rem; }
+footer img { margin-bottom: 1rem; }
+
